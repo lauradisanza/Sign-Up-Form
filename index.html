@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="img/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   
   <title>Frontend Mentor | Intro component with sign up form</title>
@@ -23,26 +25,22 @@
     </h2>
   </div>
   <h3 id="header">
-    <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+    <p>Try it free 7 days <span>then $20/mo. thereafter</span></p>
   </h3>
   <div id="form-container">
-    <label for="first"></label>
     <input type="text" placeholder="First Name" name="first" required>
 
-    <label for="last"></label>
     <input type="text" placeholder="Last Name" name="last" required>
 
-    <label for="email"></label>
     <input type="text" placeholder="Email Address" name="email" required>
 
-    <label for="psw"></label>
     <input type="password" placeholder="Password" name="psw" required>
 
     <div class="form-button">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="trialbtn">Claim your free trial</button>
     </div>
 
-    <p>By clicking the button, you are agreeing to our <a href="#" style="color:pink">Terms and Services</a></p>
+    <p>By clicking the button, you are agreeing to our <a href="#" style="color: hsl(0, 100%, 74%)">Terms and Services</a></p>
   </div>
   
   <footer>
