@@ -1,13 +1,16 @@
 /** BASE STYLES **/
 body {
-  background-image: url("/img/bg-intro-mobile.png"); /* Why is this not working????? */
+  background-image: url("../img/bg-intro-mobile.png");
   background-color: hsl(0, 100%, 74%);
   color: white;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
   text-align: center;
+  float: left;
+  overflow: auto;
 }
 
+/** INTRO STYLES **/
 h1 {
   font-size: 1.75em;
   width: 80%;
@@ -29,7 +32,7 @@ h2 {
   width: 90%;
   margin: 5%;
   font-size: 16px;
-  box-shadow: 10px grey;
+  box-shadow: 0px 10px 6px -6px hsla(0, 0%, 0%, 0.35);
 }
 
 #header p {
@@ -43,8 +46,6 @@ h2 {
   font-weight: normal;
 }
 
-
-
 /** FORM STYLES **/
 #form-container {
   background-color: white;
@@ -53,6 +54,7 @@ h2 {
   width: 90%;
   margin: 5%;
   margin-bottom: 50px;
+  box-shadow: 0px 10px 6px -6px hsla(0, 0%, 0%, 0.35);
 
 }
 
@@ -79,6 +81,7 @@ button {
   margin: 15px 0px;
   font-weight: bold;
   letter-spacing: 1px;
+  box-shadow: 0px 10px 6px -6px hsla(0, 0%, 0%, 0.35);
 }
 
 #form-container p {
@@ -99,25 +102,68 @@ footer .attribution {
 
 footer a {
   text-decoration: none;
-  color: white;
 }
 
 
 
 
 @media all and (min-width: 1200px) {
-  /** Desktop Styles Here **/
+  /** DESKTOP STYLES HERE **/
+
+  /** LAYOUT STYLES **/
+body {
+  background-image: url("../img/bg-intro-desktop.png");
+}
+
+#intro, #form {
+  float: left;
+  display: inline;
+  width: 40%;
+}
+
 #intro {
-  width: 40%;
+  text-align: left;
+  margin: 5%;
+  margin-top: 160px;
 }
 
-#header {
-  width: 40%;
-}
-#form-container {
-  width: 40%;
+#form {
+  width: 42%;
+  margin: 5% 2%;
 }
 
+  /** OTHER STYLES **/
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0px;
+}
+
+h2 {
+  padding-left: 5%;
+}
+
+#header p {
+  width: 70%;
+  margin-left: 15%;
+}
+
+input {
+  margin-top: 30px;
+  height: 50px;
+}
+
+button {
+  height: 50px;
+  margin-top: 30px;
+}
+
+#form-container p {
+  padding-bottom: 35px;
+}
+
+footer {
+  clear: both;
+}
 
 
 }
