@@ -84,6 +84,10 @@ button {
   box-shadow: 0px 10px 6px -6px hsla(0, 0%, 0%, 0.35);
 }
 
+button:hover {
+  transform: scale(1.1);
+}
+
 #form-container p {
   font-size: .65rem;
   width: 70%;
@@ -96,12 +100,20 @@ button {
   text-decoration: none;
 }
 
+#form-container a:hover {
+  text-decoration: underline;
+}
+
 footer .attribution {
   font-size: .5rem;
 }
 
 footer a {
   text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 
@@ -163,6 +175,10 @@ button {
 
 footer {
   clear: both;
+}
+
+footer .attribution {
+  font-size: .75rem;
 }
 
 
