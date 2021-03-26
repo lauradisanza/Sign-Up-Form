@@ -28,18 +28,18 @@
     <h3 id="header">
       <p>Try it free 7 days <span>then $20/mo. thereafter</span></p>
     </h3>
-    <div id="form-container">
-      <input type="text" placeholder="First Name" name="first" required>
+    <form action="form-answers.md" method="post" name="trial-form" id="trial-form">
+      <input type="text" name="first" placeholder="First Name*"><span class="error"><p id="first_error"></p></span>
 
-      <input type="text" placeholder="Last Name" name="last" required>
+      <input type="text" name="last" placeholder="Last Name*"><span class="error"><p id="last_error"></p></span>
 
-      <input type="text" placeholder="Email Address" name="email" required>
+      <input type="email" name="email" placeholder="Email Address*"><span class="error"><p id="email_error"></p></span>
 
-      <input type="password" placeholder="Password" name="psw" required>
+      <input type="password" name="password" placeholder="Password*"><span class="error"><p id="password_error"></p></span>
 
       <div class="form-button">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="trialbtn">Claim your free trial</button>
-      </div>
+        <button class="submit-button" type="submit" value="submit">Claim your free trial</button>
+      </form>
 
       <p>By clicking the button, you are agreeing to our <a href="#" style="color: hsl(0, 100%, 74%)">Terms and Services</a></p>
     </div>
